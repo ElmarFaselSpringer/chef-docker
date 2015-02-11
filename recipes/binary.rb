@@ -5,4 +5,5 @@ remote_file Docker::Helpers.executable(node) do
   group 'root'
   mode 00755
   action :create
+  notifies :restart, 'service[docker]'
 end
