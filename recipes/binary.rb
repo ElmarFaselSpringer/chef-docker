@@ -4,5 +4,5 @@ remote_file Docker::Helpers.executable(node) do
   owner 'root'
   group 'root'
   mode 00755
-  action :create_if_missing
+  action :create
 end
